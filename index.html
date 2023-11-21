@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <section id="formulario">
+        <form>
+            <h3> FAÇA SEU CADASTRO</h3>
+            <label for="">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" > <!--required: mensagem para preencher campo-->
+            <label for="">E-mail:</label>
+            <input type="email" id="email" placeholder="nome@email.com"> 
+            <label for="">Senha:</label>
+            <input type="text" id="senha" placeholder="Digite sua senha" minlength="8"> <!--maxlength / minLength: quantidade de caracter-->
+            <label for="">Confirme sua senha:</label>
+            <input type="text" id="confirmaSenha" placeholder="Digite sua senha" minlength="8"> <!--maxlength / minLength: quantidade de caracter-->
+            <button class="b1" type="submit" onclick="validaForms()">Avançar</button>
+            
+        </form>
+    <button class="b2" onclick="darkMode()">Modo Escuro</button>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
